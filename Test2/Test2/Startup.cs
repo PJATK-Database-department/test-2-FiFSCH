@@ -32,7 +32,7 @@ namespace Test2
             {
                 opt.UseSqlServer(Configuration.GetConnectionString("DefaultConnectionString"));
             });
-            services.AddScoped<IControllerService, ControllerService>();
+            services.AddScoped<IInspectionsService, InspectionsService>();
             services.AddScoped<IController2Service, Controller2Service>();
             services.AddControllers();
             services.AddSwaggerGen(c => { c.SwaggerDoc("v1", new OpenApiInfo {Title = "Test2", Version = "v1"}); });
