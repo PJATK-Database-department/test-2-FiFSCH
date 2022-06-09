@@ -18,9 +18,9 @@ namespace Test2.Models
         public int IdMechanic { get; set; }
         [Required]
         public DateTime InspectionDate { get; set; }
-        [Required]
         [MaxLength(300)]
-        public string Comment { get; set; }
+        
+        public string? Comment { get; set; }
         [ForeignKey("IdCar")]
         public Car Car { get; set; }
         [ForeignKey("IdMechanic")]

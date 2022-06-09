@@ -15,9 +15,9 @@ namespace Test2.Models
         [Key]
         [Required]
         public int IdInspection  { get; set; }
-        [Required]
+       
         [MaxLength(300)]
-        public string Comments { get; set; }
+        public string? Comments { get; set; }
         [ForeignKey("IdServiceType")]
         public ServiceTypeDict ServiceTypeDict { get; set; }
         [ForeignKey("IdInspection")]
